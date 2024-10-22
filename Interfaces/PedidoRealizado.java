@@ -8,12 +8,12 @@ package Interfaces;
  *
  * @author Student
  */
-public class PedidoEntregado extends javax.swing.JInternalFrame {
+public class PedidoRealizado extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form PedidoEntregado
+     * Creates new form RealizaPedido
      */
-    public PedidoEntregado() {
+    public PedidoRealizado() {
         initComponents();
     }
 
@@ -25,6 +25,12 @@ public class PedidoEntregado extends javax.swing.JInternalFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Pedidos Realizados");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
