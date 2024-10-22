@@ -4,10 +4,42 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Student
  */
-public class GestorPedido {
+public final class GestorPedido {
+
+    private static GestorPedido instancia;
+    private ArrayList<String> listaPedido = null;
+
+    public GestorPedido instancia() {
+        if (instancia == null) 
+            instancia = new GestorPedido();
+
+        return instancia;
+
+    }
+
+    private GestorPedido() {
+        listaPedido = new ArrayList<String>();
+    }
     
+    public ArrayList<String>getArray(){
+        return this.listaPedido;
+    }
+    
+    public void agregarPedido(String pedido){
+        listaPedido.add(pedido);
+    }
+//
+//    public void cancelar() {
+//
+//    }
+//
+//    public void mostrar() {
+//
+//    }
 }
