@@ -8,12 +8,12 @@ package Interfaces;
  *
  * @author Student
  */
-public class PedidoEntregado extends javax.swing.JInternalFrame {
+public class PedidoRealizado extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form PedidoEntregado
+     * Creates new form RealizaPedido
      */
-    public PedidoEntregado() {
+    public PedidoRealizado() {
         initComponents();
     }
 
@@ -29,16 +29,18 @@ public class PedidoEntregado extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
+        setResizable(true);
+        setTitle("Pedidos Realizados");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGap(0, 394, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 274, Short.MAX_VALUE)
         );
 
         pack();

@@ -8,12 +8,12 @@ package Interfaces;
  *
  * @author Student
  */
-public class RealizaPedido extends javax.swing.JInternalFrame {
+public class MostrarPedido extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form RealizaPedido
+     * Creates new form MostrarPedido
      */
-    public RealizaPedido() {
+    public MostrarPedido() {
         initComponents();
     }
 
