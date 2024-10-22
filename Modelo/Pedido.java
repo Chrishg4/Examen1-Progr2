@@ -9,10 +9,21 @@ package Modelo;
  * @author Student
  */
 public class Pedido {
+
     private Cliente cliente;
     private String producSolicitado;
     private int cantiPedido;
-   // private boolean estadoPedido;
+    private EstadoPedido estado;
+
+    private EstadoPedido obtenerEstado() {
+        return estado;
+    }
+
+    private enum EstadoPedido {
+        pendiente,
+        cancelado,
+        completado;
+    }
 
     public Cliente getCliente() {
         return cliente;
@@ -26,21 +37,19 @@ public class Pedido {
         return cantiPedido;
     }
 
-//    public boolean isEstadoPedido() {
-//        return estadoPedido;
-//    }
-
     public void setCantiPedido(int cantiPedido) {
         this.cantiPedido = cantiPedido;
+    }
+
+    public EstadoPedido getEstado() {
+        return obtenerEstado();
     }
 
     public Pedido(Cliente cliente, String producSolicitado, int cantiPedido, boolean estadoPedido) {
         this.cliente = cliente;
         this.producSolicitado = producSolicitado;
         this.cantiPedido = cantiPedido;
-       // this.estadoPedido = estadoPedido;
+
     }
-    
-    
-    
+
 }
